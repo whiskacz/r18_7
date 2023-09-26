@@ -7,14 +7,14 @@ import Question from './components/Question';
 const R18_7 = () => {
     return(
     <div className='wrapper'>
-        <article className='container'>
-            <title className='title'>Questiobbbbbbbbbbbbbbbbbbbbbbbbbbbbbbns</title>
+        <section className='container'>
+            <div className='title'>Questions</div>
             <ul className='questionContainer'>
             {questions.map((element) => {
                return <Question key={element.id} {...element} />
             })}
             </ul>
-        </article>
+        </section>
     </div>
 )}
 
